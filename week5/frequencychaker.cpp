@@ -2,7 +2,7 @@
 using namespace std;
 main()
 {
-    int number, i, frequancy = 0;
+    int  frequancy = 0;
     cout << " enter a number: ";
     long long n;
     cin >> n;
