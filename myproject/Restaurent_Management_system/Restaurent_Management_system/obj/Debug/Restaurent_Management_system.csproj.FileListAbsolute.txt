@@ -1,0 +1,7 @@
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\bin\Debug\Restaurent_Management_system.exe.config
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\bin\Debug\Restaurent_Management_system.exe
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\bin\Debug\Restaurent_Management_system.pdb
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\obj\Debug\Restaurent_Management_system.csproj.AssemblyReference.cache
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\obj\Debug\Restaurent_Management_system.csproj.CoreCompileInputs.cache
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\obj\Debug\Restaurent_Management_system.exe
+C:\OOP\Restaurent_Management_system\Restaurent_Management_system\obj\Debug\Restaurent_Management_system.pdb
