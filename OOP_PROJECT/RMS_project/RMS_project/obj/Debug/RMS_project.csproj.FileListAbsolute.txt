@@ -1,0 +1,7 @@
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\bin\Debug\RMS_project.exe.config
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\bin\Debug\RMS_project.exe
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\bin\Debug\RMS_project.pdb
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\obj\Debug\RMS_project.csproj.AssemblyReference.cache
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\obj\Debug\RMS_project.csproj.CoreCompileInputs.cache
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\obj\Debug\RMS_project.exe
+C:\OOP\OOP_PROJECT\RMS_project\RMS_project\obj\Debug\RMS_project.pdb

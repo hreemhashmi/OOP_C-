@@ -1,0 +1,16 @@
+pizza,550
+biryani,270
+burger,200
+juice,120
+burger,200
+juice,120
+pizza,550
+burger,200
+juice,120
+pizza,550
+burger,200
+juice,120
+pizza,550
+burger,200
+juice,120
+pizza,550
