@@ -1,0 +1,1710 @@
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Program.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Restaurant r1 = new Restaurant();
+            r1.Start();
+        }
+    }
+}
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Restaurant.cs =====
+
+using RMS_project.Admin;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RMS_project.Customer;
+using RMS_project.Staff;
+
+namespace RMS_project
+{
+    internal class Restaurant
+    {
+        public void Start()
+        {
+            AdminUI a1 = new AdminUI();
+            CustomerUI customerUI = new CustomerUI();
+            StaffUI staffUI = new StaffUI();
+            while (true)
+            {
+                string Option = MainMenu();
+                if (Option == "1")
+                {
+                    a1.Login();
+                    // admin menu
+                }
+                else if (Option == "2")
+                {
+                    // customer menu
+                    customerUI.CustomerMenu();
+                }
+                else if (Option == "3")
+                {
+                    // staff menu
+                    staffUI.StaffMenu();
+
+                }
+                else if (Option == "4")
+                {
+                    break;
+                }
+            }
+
+
+        }
+        public string MainMenu()
+        {
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("---Restaurent Management system---");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine(" ===========MAIN MNUE============ ");
+            Console.WriteLine(" 1.Admin ");
+            Console.WriteLine(" 2.Customer ");
+            Console.WriteLine(" 3.Staff ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" 4.Exit ");
+            Console.ForegroundColor = ConsoleColor.White;
+            string option = Console.ReadLine();
+            return option;
+
+        }
+    }
+}
+
+    
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Admin\AdminModel.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Admin
+{
+    internal class AdminModel
+    {
+        private string name;
+        private string password;
+
+        public AdminModel()
+        {
+
+        }
+        public AdminModel(string name, string password)
+        {
+            this.name = name;
+            this.password = password;
+        }
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
+        public string GetName()
+        {
+            return this.name;
+        }
+        public void SetPassword(string password)
+        {
+            this.password = password;
+        }
+        public string GetPassword()
+        {
+            return this.password;
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Admin\AdminRepo.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Admin
+{
+    internal class AdminRepo
+    {
+        private AdminModel admin = new AdminModel("admin", "789");
+        public AdminModel GetAdmin()
+        {
+            return this.admin;
+        }
+    }
+}
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Admin\AdminService.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Admin
+{
+    internal class AdminService
+    {
+        private AdminRepo repo = new AdminRepo();
+        public bool Login(string name, string password)
+        {
+            AdminModel admin = repo.GetAdmin();
+            if (admin.GetName() == name && admin.GetPassword() == password)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+}
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Admin\AdminUI.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RMS_project.Dish;
+using RMS_project.Order;
+using RMS_project.Employee;
+namespace RMS_project.Admin
+
+{
+    internal class AdminUI
+    {
+        private AdminService service = new AdminService();
+        private DishUI dishUI = new DishUI();
+        private OrderUI orderUI = new OrderUI();
+        private EmployeeUI employeeUI = new EmployeeUI();
+
+        public void Login()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Clear();
+                Console.WriteLine("Login Attempt " + (i + 1));
+                Console.Write("Enter User Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Enter Pasword: ");
+                string password = Console.ReadLine();
+                if (service.Login(name, password) == true)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(" Login Succesful! ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.ReadKey();
+                    AdminMenu();
+                    return;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid Username or Password ");
+                    Console.ResetColor();
+                    Console.WriteLine("Press any key to Countinue...");
+                    Console.ReadKey();
+                }
+            }
+        }
+        public void AdminMenu()
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine(" ========= Admin Menu ========= ");
+                Console.WriteLine("1.  Add Dishes ");
+                Console.WriteLine("2.  View All Dishes ");
+                Console.WriteLine("3.  Search Dish ");
+                Console.WriteLine("4.  Update Dish ");
+                Console.WriteLine("5.  Delete Dish ");
+                Console.WriteLine("6.  Sort Dishes (Low to High) ");
+                Console.WriteLine("7.  Sort Dishes (High to Low) ");
+                Console.WriteLine("8.  View Total Revenue ");
+                Console.WriteLine("9.  View Order History ");
+                Console.WriteLine("10. Staff Management ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("11. Exit ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine(" Choose Option ");
+                string option = Console.ReadLine();
+                if (option == "1")
+                {
+                    // add dishes
+                    dishUI.AddDish();
+                
+                }
+                else if (option == "2")
+                {
+                    // view all dishes
+                    dishUI.ViewDishes();
+
+                    
+                }
+                else if (option == "3")
+                {
+                    //search dish 
+                    dishUI.SearchDish();
+                }
+                else if (option == "4")
+                {
+                    dishUI.UpdateDish();
+                }
+                else if(option == "5")
+                {
+                    dishUI.DeleteDish();
+                }
+                else if( option == "6")
+                {
+                    dishUI.SortDishes(true);
+                }
+                else if(option == "7")
+                {
+                    dishUI.SortDishes(false);
+
+                }
+                else if(option == "8")
+                {
+                    orderUI.ShowRevenue();
+                }
+                else if(option == "9")
+                {
+                    orderUI.OrderHistory();
+                }
+                else if(option == "10")
+                {
+                    employeeUI.EmployeeMenu();
+
+                }
+                else if(option == "11")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(" Invalid Choice ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.ReadLine();
+                }
+            }
+        }
+    }
+}
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Customer\CustomerUI.cs =====
+
+using RMS_project.Dish;
+using RMS_project.Order;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Customer
+{
+    internal class CustomerUI
+    {
+        private DishUI dishUI = new DishUI();
+        private OrderUI orderUI = new OrderUI();
+
+        public void CustomerMenu()
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("============ WELCOME TO HM HOME KITCHEN ============ ");
+                Console.WriteLine("1.  View Menu ");
+                Console.WriteLine("2.  Search Dish ");
+                Console.WriteLine("3.  Order Food ");
+                Console.WriteLine("4.  View Current Order ");
+                Console.WriteLine("5.  Remove Item From Order ");
+                Console.WriteLine("6.  Update Quantity ");
+                Console.WriteLine("7.  Calculate Bill ");
+                Console.WriteLine("8.  Discount ");
+                Console.WriteLine("9.  Confirm Order ");
+                Console.WriteLine("10. Cancel Order ");
+                Console.WriteLine("11. View Order History ");
+                Console.WriteLine("12. Exit ");
+                Console.Write(" Choose : ");
+                string option = Console.ReadLine();
+
+                if (option == "1")
+                { dishUI.ViewDishes();
+                }
+                else if (option == "2")
+                { dishUI.SearchDish();
+                }
+                else if (option == "3") 
+                { orderUI.PlaceOrder();
+                }
+                else if (option == "4")
+                { orderUI.ViewCurrentOrders(); 
+                }
+                else if (option == "5") 
+                { orderUI.RemoveOrder();
+                }
+                else if (option == "6") 
+                { orderUI.UpdateQuantity(); 
+                }
+                else if (option == "7") 
+                { orderUI.ShowBill();
+                }
+                else if (option == "8")
+                { orderUI.ShowDiscount();
+                }
+                else if (option == "9") 
+                { orderUI.ConfirmOrder();
+                }
+                else if (option == "10")
+                { orderUI.CancelOrder(); 
+                }
+                else if (option == "11")
+                { orderUI.OrderHistory();
+                }
+                else if (option == "12") 
+                { break;
+                }
+                else
+                {
+                    Console.WriteLine(" invalid option ");
+                    Console.ReadLine();
+                }
+            }
+        }
+    }
+
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Dish\DishModel.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Dish
+{
+    internal class DishModel
+    {
+        private string name;
+        private double price;
+        public DishModel()
+        {
+
+        }
+        public DishModel(string name, double price)
+        {
+            this.name = name;
+            this.price = price;
+        }
+        public string GetName()
+        {
+         return this.name;
+        }
+        public void SetName(string name)
+        {
+            this.name =name;
+        }
+        public double GetPrice()
+        {
+            return this.price;
+        }
+        public void SetPrice(double price)
+        {
+            this.price = price;
+        }
+        public override string ToString()
+        {
+            return $"{name},{price}";
+        }
+
+
+    }
+}
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Dish\DishRepo.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Dish
+{
+    internal class DishRepo
+    {
+        private readonly string file = "dish.txt";
+        public DishRepo() {
+            if (!File.Exists(file))
+            {
+                SaveInFile(new DishModel("biryani", 270));
+                SaveInFile(new DishModel("burger", 200));
+                SaveInFile(new DishModel("juice", 120));
+                SaveInFile(new DishModel("pizza", 550));
+            }
+
+        }
+        public void SaveInFile(DishModel dish)
+        {
+            using (StreamWriter stream = new StreamWriter(file, true))
+            {
+                stream.WriteLine(dish.ToString());
+            }
+        }
+        public List<DishModel> GetDishesFromFiles()
+        {
+            List<DishModel> dishModels = new List<DishModel>();
+            if (!File.Exists(file))
+            {
+                return dishModels;
+            }
+            using (StreamReader stream = new StreamReader(file))
+            {
+                string line = "";
+                while ((line = stream.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(',');
+                    string dishname = parts[0];
+                    double price = double.Parse(parts[1]);
+                    DishModel dishModel = new DishModel(dishname,price);
+                    dishModels.Add(dishModel);
+                }
+            }
+            return dishModels;
+        }
+        public void SaveAllInFile(List<DishModel> dishes)
+        {
+            using (StreamWriter stream = new StreamWriter(file, false))
+            {
+                for (int i = 0; i < dishes.Count; i++)
+                {
+                    stream.WriteLine(dishes[i].ToString());
+                }
+
+            }
+        }
+    }
+}
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Dish\DishService.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Dish
+{
+    internal class DishService
+    {
+      
+        private DishRepo repo = new DishRepo();
+
+        public void AddDish(DishModel dish)
+        {
+            repo.SaveInFile(dish);
+        }
+
+        public List<DishModel> GetAllDishes()
+        {
+            return repo.GetDishesFromFiles();
+        }
+
+        public DishModel SearchDish(string name)
+        {
+            List<DishModel> dishes = repo.GetDishesFromFiles();
+            for (int i = 0; i < dishes.Count; i++)
+            {
+                if (dishes[i].GetName() == name)
+                {
+                    return dishes[i];
+                }
+            }
+            return null;
+        }
+
+        public bool UpdateDish(string oldName, string newName, float newPrice)
+        {
+            List<DishModel> dishes = repo.GetDishesFromFiles();
+            for (int i = 0; i < dishes.Count; i++)
+            {
+                if (dishes[i].GetName() == oldName)
+                {
+                    dishes[i].SetName(newName);
+                    dishes[i].SetPrice(newPrice);
+                    repo.SaveAllInFile(dishes);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool DeleteDish(string name)
+        {
+            List<DishModel> dishes = repo.GetDishesFromFiles();
+            List<DishModel> remaining = new List<DishModel>();
+            bool found = false;
+
+            for (int i = 0; i < dishes.Count; i++)
+            {
+                if (dishes[i].GetName() == name)
+                {
+                    found = true;
+                }
+                else
+                {
+                    remaining.Add(dishes[i]);
+                }
+            }
+
+            if (found == true)
+            {
+                repo.SaveAllInFile(remaining);
+            }
+            return found;
+        }
+
+        public void SortDishes(bool lowToHigh)
+        {
+            List<DishModel> dishes = repo.GetDishesFromFiles();
+
+            for (int i = 0; i < dishes.Count; i++)
+            {
+                for (int j = i + 1; j < dishes.Count; j++)
+                {
+                    bool swap = false;
+                    if (lowToHigh == true && dishes[i].GetPrice() > dishes[j].GetPrice())
+                    {
+                        swap = true;
+                    }
+                    if (lowToHigh == false && dishes[i].GetPrice() < dishes[j].GetPrice())
+                    {
+                        swap = true;
+                    }
+
+                    if (swap == true)
+                    {
+                        DishModel temp = dishes[i];
+                        dishes[i] = dishes[j];
+                        dishes[j] = temp;
+                    }
+                }
+            }
+            repo.SaveAllInFile(dishes);
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Dish\DishUI.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Dish
+{
+    internal class DishUI
+    {
+
+        private DishService service = new DishService();
+
+        public void AddDish()
+        {
+            Console.Write(" Enter Dish Name : ");
+            string name = Console.ReadLine();
+            Console.Write(" Enter Price : ");
+            float price = float.Parse(Console.ReadLine());
+
+            DishModel dish = new DishModel(name, price);
+            service.AddDish(dish);
+
+            Console.WriteLine(" Dish Added Successfully ");
+            Pause();
+        }
+
+        public void ViewDishes()
+        {
+            List<DishModel> dishes = service.GetAllDishes();
+
+            Console.WriteLine(" Dish Name \t Price ");
+            for (int i = 0; i < dishes.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + dishes[i].GetName() + " \t " + dishes[i].GetPrice());
+            }
+            Pause();
+        }
+
+        public void SearchDish()
+        {
+            Console.Write(" Enter Search Dish Name : ");
+            string name = Console.ReadLine();
+
+            DishModel dish = service.SearchDish(name);
+            if (dish != null)
+            {
+                Console.WriteLine(" Dish Found ");
+                Console.WriteLine(" Dish name : " + dish.GetName() + " Price : " + dish.GetPrice());
+            }
+            else
+            {
+                Console.WriteLine(" not found ");
+            }
+            Pause();
+        }
+
+        public void UpdateDish()
+        {
+            Console.Write(" Enter Dish Name You Want To Update : ");
+            string oldName = Console.ReadLine();
+            Console.Write(" Enter New Dish Name : ");
+            string newName = Console.ReadLine();
+            Console.Write(" Enter New Price : ");
+            float newPrice = float.Parse(Console.ReadLine());
+
+            if (service.UpdateDish(oldName, newName, newPrice) == true)
+            {
+                Console.WriteLine(" Record Successfully Updated ");
+            }
+            else
+            {
+                Console.WriteLine(" Dish Not Found ");
+            }
+            Pause();
+        }
+
+        public void DeleteDish()
+        {
+            Console.Write(" Enter Dish Name You Want To Delete : ");
+            string name = Console.ReadLine();
+
+            if (service.DeleteDish(name) == true)
+            {
+                Console.WriteLine(" Dish Deleted Successfully ");
+            }
+            else
+            {
+                Console.WriteLine(" Dish Not Found ");
+            }
+            Pause();
+        }
+
+        public void SortDishes(bool lowToHigh)
+        {
+            service.SortDishes(lowToHigh);
+            if (lowToHigh == true)
+            {
+                Console.WriteLine(" ------- Sorted Dishes From Low To High ------- ");
+            }
+            else
+            {
+                Console.WriteLine(" ------- Sorted Dishes From High To Low ------- ");
+            }
+            ViewDishes();
+        }
+
+        private void Pause()
+        {
+            Console.WriteLine(" Press Enter to continue.....");
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Employee\EmployeeModel.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Employee
+{
+    internal class EmployeeModel
+    {
+            private string name;
+            private int id;
+            private double salary;
+            private string timing;
+
+            public EmployeeModel()
+            {
+            }
+
+            public EmployeeModel(string name, int id, double salary, string timing)
+            {
+                this.name = name;
+                this.id = id;
+                this.salary = salary;
+                this.timing = timing;
+            }
+
+            public string GetName() { return this.name; }
+            public void SetName(string name) { this.name = name; }
+
+            public int GetId() { return this.id; }
+            public void SetId(int id) { this.id = id; }
+
+            public double GetSalary() { return this.salary; }
+            public void SetSalary(double salary) { this.salary = salary; }
+
+            public string GetTiming() { return this.timing; }
+            public void SetTiming(string timing) { this.timing = timing; }
+
+            public override string ToString()
+            {
+                return $"{name},{id},{salary},{timing}";
+            }
+        }
+    }
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Employee\EmployeeRepo.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Employee
+{
+    internal class EmployeeRepo
+    {
+        private readonly string file = "employee.txt";
+
+        public EmployeeRepo() { }
+
+        public void SaveInFile(EmployeeModel employee)
+        {
+            using (StreamWriter stream = new StreamWriter(file, true))
+            {
+                stream.WriteLine(employee.ToString());
+            }
+        }
+
+        public List<EmployeeModel> GetEmployeesFromFile()
+        {
+            List<EmployeeModel> employees = new List<EmployeeModel>();
+
+            if (!File.Exists(file))
+            {
+                return employees;
+            }
+
+            using (StreamReader stream = new StreamReader(file))
+            {
+                string line = "";
+                while ((line = stream.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(',');
+                    string name = parts[0];
+                    int id = int.Parse(parts[1]);
+                    double salary = double.Parse(parts[2]);
+                    string timing = parts[3];
+
+                    EmployeeModel employee = new EmployeeModel(name, id, salary, timing);
+                    employees.Add(employee);
+                }
+            }
+            return employees;
+        }
+
+        public void SaveAllInFile(List<EmployeeModel> employees)
+        {
+            using (StreamWriter stream = new StreamWriter(file, false))
+            {
+                for (int i = 0; i < employees.Count; i++)
+                {
+                    stream.WriteLine(employees[i].ToString());
+                }
+            }
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Employee\EmployeeService.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Employee
+{
+    internal class EmployeeService
+    {
+        private EmployeeRepo repo = new EmployeeRepo();
+
+        public bool AddEmployee(EmployeeModel employee)
+        {
+            List<EmployeeModel> employees = repo.GetEmployeesFromFile();
+            for (int i = 0; i < employees.Count; i++)
+            {
+                if (employees[i].GetId() == employee.GetId())
+                {
+                    return false;
+                }
+            }
+            repo.SaveInFile(employee);
+            return true;
+        }
+
+        public List<EmployeeModel> GetAllEmployees()
+        {
+            return repo.GetEmployeesFromFile();
+        }
+
+        public bool UpdateEmployee(int id, string newName, double newSalary, string newTiming)
+        {
+            List<EmployeeModel> employees = repo.GetEmployeesFromFile();
+            for (int i = 0; i < employees.Count; i++)
+            {
+                if (employees[i].GetId() == id)
+                {
+                    employees[i].SetName(newName);
+                    employees[i].SetSalary(newSalary);
+                    employees[i].SetTiming(newTiming);
+                    repo.SaveAllInFile(employees);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool DeleteEmployee(int id)
+        {
+            List<EmployeeModel> employees = repo.GetEmployeesFromFile();
+            List<EmployeeModel> remaining = new List<EmployeeModel>();
+            bool found = false;
+
+            for (int i = 0; i < employees.Count; i++)
+            {
+                if (employees[i].GetId() == id)
+                {
+                    found = true;
+                }
+                else
+                {
+                    remaining.Add(employees[i]);
+                }
+            }
+            if (found == true)
+            {
+                repo.SaveAllInFile(remaining);
+            }
+            return found;
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Employee\EmployeeUI.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Employee
+{
+    internal class EmployeeUI
+    {
+
+        private EmployeeService service = new EmployeeService();
+
+        public void EmployeeMenu()
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine(" ===== Staff Management ===== ");
+                Console.WriteLine(" 1. Add Employee ");
+                Console.WriteLine(" 2. View Employee ");
+                Console.WriteLine(" 3. Update Employee Record ");
+                Console.WriteLine(" 4. Delete Employee Record ");
+                Console.WriteLine(" 5. View Employees Salary ");
+                Console.WriteLine(" 6. Back To Admin Menu ");
+                Console.Write(" Choose : ");
+                string option = Console.ReadLine();
+
+                if (option == "1") { AddEmployee(); }
+                else if (option == "2") { ViewEmployees(); }
+                else if (option == "3") { UpdateEmployee(); }
+                else if (option == "4") { DeleteEmployee(); }
+                else if (option == "5") { ViewSalaries(); }
+                else if (option == "6") { break; }
+                else
+                {
+                    Console.WriteLine(" invalid option ");
+                    Console.ReadLine();
+                }
+            }
+        }
+
+        private void AddEmployee()
+        {
+            Console.Write(" Enter Employee Name : ");
+            string name = Console.ReadLine();
+            Console.Write(" Enter Employee Id : ");
+            int id = int.Parse(Console.ReadLine());
+            Console.Write(" Enter Employee Salary : ");
+            double salary = double.Parse(Console.ReadLine());
+            Console.Write(" Enter Employee Work Timing : ");
+            string timing = Console.ReadLine();
+
+            EmployeeModel employee = new EmployeeModel(name, id, salary, timing);
+            if (service.AddEmployee(employee) == true)
+            {
+                Console.WriteLine(" Employee Record Added Successfully ");
+            }
+            else
+            {
+                Console.WriteLine(" This Id already exists ");
+            }
+            Pause();
+        }
+
+        private void ViewEmployees()
+        {
+            List<EmployeeModel> employees = service.GetAllEmployees();
+
+            Console.WriteLine("========= Employee Record ======== ");
+            Console.WriteLine(" EMPLOYEE\tID\tSalary\tTiming ");
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine(employees[i].GetName() + "\t" + employees[i].GetId()
+                    + "\t" + employees[i].GetSalary() + "\t" + employees[i].GetTiming());
+            }
+            Pause();
+        }
+
+        private void UpdateEmployee()
+        {
+            Console.Write(" Enter Employee ID to Update : ");
+            int id = int.Parse(Console.ReadLine());
+            Console.Write(" Enter New Name : ");
+            string name = Console.ReadLine();
+            Console.Write(" Enter New Salary : ");
+            double salary = double.Parse(Console.ReadLine());
+            Console.Write(" Enter New Work Timing : ");
+            string timing = Console.ReadLine();
+
+            if (service.UpdateEmployee(id, name, salary, timing) == true)
+            {
+                Console.WriteLine(" Record Updated ");
+            }
+            else
+            {
+                Console.WriteLine(" Employee Not Found ");
+            }
+            Pause();
+        }
+
+        private void DeleteEmployee()
+        {
+            Console.Write(" Enter Employee ID To Delete : ");
+            int id = int.Parse(Console.ReadLine());
+
+            if (service.DeleteEmployee(id) == true)
+            {
+                Console.WriteLine(" Employee Record Deleted ");
+            }
+            else
+            {
+                Console.WriteLine(" Employee Not Found ");
+            }
+            Pause();
+        }
+
+        private void ViewSalaries()
+        {
+            List<EmployeeModel> employees = service.GetAllEmployees();
+
+            Console.WriteLine(" ==== Employee Salary ==== ");
+            Console.WriteLine(" Name\t\tSalary ");
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine(employees[i].GetName() + " \t " + employees[i].GetSalary());
+            }
+            Pause();
+        }
+
+        private void Pause()
+        {
+            Console.WriteLine(" Press Enter to continue.....");
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Order\OrderModel.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Order
+{
+    internal class OrderModel
+    { 
+
+            private string dishName;
+            private int quantity;
+            private double total;
+            private string status;
+
+            public OrderModel()
+            {
+            }
+
+            public OrderModel(string dishName, int quantity, double total, string status)
+            {
+                this.dishName = dishName;
+                this.quantity = quantity;
+                this.total = total;
+                this.status = status;
+            }
+
+            public string GetDishName()
+            {
+                return this.dishName;
+            }
+
+            public void SetDishName(string dishName)
+            {
+                this.dishName = dishName;
+            }
+
+            public int GetQuantity()
+            {
+                return this.quantity;
+            }
+
+            public void SetQuantity(int quantity)
+            {
+                this.quantity = quantity;
+            }
+
+            public double GetTotal()
+            {
+                return this.total;
+            }
+
+            public void SetTotal(double total)
+            {
+                this.total = total;
+            }
+
+            public string GetStatus()
+            {
+                return this.status;
+            }
+
+            public void SetStatus(string status)
+            {
+                this.status = status;
+            }
+
+            public override string ToString()
+            {
+                return $"{dishName},{quantity},{total},{status}";
+            }
+        }
+    }
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Order\OrderRepo.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Order
+{
+    internal class OrderRepo
+    {
+
+        private readonly string file = "orders.txt";
+
+        public OrderRepo() { }
+
+        public void SaveInFile(OrderModel order)
+        {
+            using (StreamWriter stream = new StreamWriter(file, true))
+            {
+                stream.WriteLine(order.ToString());
+            }
+        }
+
+        public List<OrderModel> GetOrdersFromFile()
+        {
+            List<OrderModel> orderModels = new List<OrderModel>();
+
+            if (!File.Exists(file))
+            {
+                return orderModels;
+            }
+
+            using (StreamReader stream = new StreamReader(file))
+            {
+                string line = "";
+                while ((line = stream.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(',');
+                    string dishName = parts[0];
+                    int quantity = int.Parse(parts[1]);
+                    double total = double.Parse(parts[2]);
+                    string status = parts[3];
+
+                    OrderModel orderModel = new OrderModel(dishName, quantity, total, status);
+                    orderModels.Add(orderModel);
+                }
+            }
+            return orderModels;
+        }
+
+        public void SaveAllInFile(List<OrderModel> orders)
+        {
+            using (StreamWriter stream = new StreamWriter(file, false))
+            {
+                for (int i = 0; i < orders.Count; i++)
+                {
+                    stream.WriteLine(orders[i].ToString());
+                }
+            }
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Order\OrderService.cs =====
+
+using RMS_project.Dish;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Order
+{
+    internal class OrderService
+    {
+        private OrderRepo repo = new OrderRepo();
+        private DishService dishService = new DishService();
+
+        public bool PlaceOrder(string dishName, int quantity)
+        {
+            DishModel dish = dishService.SearchDish(dishName);
+            if (dish == null || quantity <= 0)
+            {
+                return false;
+            }
+            double total = dish.GetPrice() * quantity;
+            OrderModel order = new OrderModel(dishName, quantity, total, "pending");
+            repo.SaveInFile(order);
+            return true;
+        }
+
+        public List<OrderModel> GetAllOrders()
+        {
+            return repo.GetOrdersFromFile();
+        }
+
+        public List<OrderModel> GetCurrentOrders()
+        {
+            List<OrderModel> all = repo.GetOrdersFromFile();
+            List<OrderModel> current = new List<OrderModel>();
+            for (int i = 0; i < all.Count; i++)
+            {
+                string status = all[i].GetStatus();
+                if (status == "pending" || status == "confirmed")
+                {
+                    current.Add(all[i]);
+                }
+            }
+            return current;
+        }
+
+        public bool RemoveOrder(string dishName)
+        {
+            List<OrderModel> orders = repo.GetOrdersFromFile();
+            List<OrderModel> remaining = new List<OrderModel>();
+            bool found = false;
+
+            for (int i = 0; i < orders.Count; i++)
+            {
+                if (found == false && orders[i].GetDishName() == dishName && orders[i].GetStatus() == "pending")
+                {
+                    found = true;
+                }
+                else
+                {
+                    remaining.Add(orders[i]);
+                }
+            }
+            if (found == true)
+            {
+                repo.SaveAllInFile(remaining);
+            }
+            return found;
+        }
+
+        public bool UpdateQuantity(string dishName, int newQuantity)
+        {
+            DishModel dish = dishService.SearchDish(dishName);
+            if (dish == null || newQuantity <= 0)
+            {
+                return false;
+            }
+            List<OrderModel> orders = repo.GetOrdersFromFile();
+            for (int i = 0; i < orders.Count; i++)
+            {
+                if (orders[i].GetDishName() == dishName && orders[i].GetStatus() == "pending")
+                {
+                    orders[i].SetQuantity(newQuantity);
+                    orders[i].SetTotal(dish.GetPrice() * newQuantity);
+                    repo.SaveAllInFile(orders);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool ChangeAllPending(string newStatus)
+        {
+            List<OrderModel> orders = repo.GetOrdersFromFile();
+            bool found = false;
+            for (int i = 0; i < orders.Count; i++)
+            {
+                if (orders[i].GetStatus() == "pending")
+                {
+                    orders[i].SetStatus(newStatus);
+                    found = true;
+                }
+            }
+            if (found == true)
+            {
+                repo.SaveAllInFile(orders);
+            }
+            return found;
+        }
+
+        public double CalculateBill()
+        {
+            List<OrderModel> current = GetCurrentOrders();
+            double bill = 0;
+            for (int i = 0; i < current.Count; i++)
+            {
+                bill = bill + current[i].GetTotal();
+            }
+            return bill;
+        }
+
+        public double GetDiscountPercent(double bill)
+        {
+            if (bill >= 5000)
+            {
+                return 10;
+            }
+            else if (bill >= 1000)
+            {
+                return 5;
+            }
+            return 0;
+        }
+
+        public double GetCouponPercent(string code)
+        {
+            if (code == "hm207")
+            {
+                return 7;
+            }
+            return 0;
+        }
+        public bool UpdateStatus(string dishName, string newStatus)
+        {
+            List<OrderModel> orders = repo.GetOrdersFromFile();
+            for (int i = 0; i < orders.Count; i++)
+            {
+                string status = orders[i].GetStatus();
+                if (orders[i].GetDishName() == dishName && status != "canceled" && status != "completed")
+                {
+                    orders[i].SetStatus(newStatus);
+                    repo.SaveAllInFile(orders);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public List<OrderModel> GetOrdersByStatus(string status)
+        {
+            List<OrderModel> all = repo.GetOrdersFromFile();
+            List<OrderModel> result = new List<OrderModel>();
+            for (int i = 0; i < all.Count; i++)
+            {
+                if (all[i].GetStatus() == status)
+                {
+                    result.Add(all[i]);
+                }
+            }
+            return result;
+        }
+
+        public double GetTotalRevenue()
+        {
+            List<OrderModel> orders = repo.GetOrdersFromFile();
+            double revenue = 0;
+            for (int i = 0; i < orders.Count; i++)
+            {
+                if (orders[i].GetStatus() != "canceled")
+                {
+                    revenue = revenue + orders[i].GetTotal();
+                }
+            }
+            return revenue;
+        }
+
+    }
+
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Order\OrderUI.cs =====
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Order
+{
+    internal class OrderUI
+    {
+        private OrderService service = new OrderService();
+
+        public void PlaceOrder()
+        {
+            Console.Write(" How many items do you want to order : ");
+            int count = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.Write(" Place Order (dish name) : ");
+                string name = Console.ReadLine();
+                Console.Write(" Dish Quantity : ");
+                int quantity = int.Parse(Console.ReadLine());
+
+                if (service.PlaceOrder(name, quantity) == false)
+                {
+                    Console.WriteLine(" Item not found or invalid quantity ");
+                }
+            }
+            Console.WriteLine(" Thanks for your order ");
+            Pause();
+        }
+
+        public void ViewCurrentOrders()
+        {
+            Console.WriteLine(" ==== Current Orders ==== ");
+            PrintOrders(service.GetCurrentOrders());
+            Pause();
+        }
+
+        public void OrderHistory()
+        {
+            Console.WriteLine(" ========== Order History ========== ");
+            PrintOrders(service.GetAllOrders());
+            Pause();
+        }
+
+        public void RemoveOrder()
+        {
+            Console.Write(" Enter item name you want to remove : ");
+            string name = Console.ReadLine();
+
+            if (service.RemoveOrder(name) == true)
+            {
+                Console.WriteLine(" Order item removed ");
+            }
+            else
+            {
+                Console.WriteLine(" Item not found ");
+            }
+            Pause();
+        }
+
+        public void UpdateQuantity()
+        {
+            Console.Write(" Enter item name you want to update : ");
+            string name = Console.ReadLine();
+            Console.Write(" Enter new quantity : ");
+            int quantity = int.Parse(Console.ReadLine());
+
+            if (service.UpdateQuantity(name, quantity) == true)
+            {
+                Console.WriteLine(" Quantity Successfully Updated ");
+            }
+            else
+            {
+                Console.WriteLine(" Item not found or invalid quantity ");
+            }
+            Pause();
+        }
+
+        public void ShowBill()
+        {
+            double bill = service.CalculateBill();
+            Console.WriteLine(" ---------- Bill ---------- ");
+            PrintOrders(service.GetCurrentOrders());
+            Console.WriteLine(" Your Bill IS: RS. " + bill);
+            Pause();
+        }
+
+        public void ShowDiscount()
+        {
+            double bill = service.CalculateBill();
+            double percent = service.GetDiscountPercent(bill);
+
+            Console.Write(" Enter coupon code (press Enter to skip) : ");
+            string code = Console.ReadLine();
+            double couponPercent = service.GetCouponPercent(code);
+            if (couponPercent > percent)
+            {
+                percent = couponPercent;
+            }
+
+            double discount = bill * percent / 100;
+            Console.WriteLine(" Total Bill : " + bill);
+            Console.WriteLine(" Discount (" + percent + "%) : " + discount);
+            Console.WriteLine(" Final Bill : " + (bill - discount));
+            Pause();
+        }
+
+        public void ConfirmOrder()
+        {
+            if (service.ChangeAllPending("confirmed") == true)
+            {
+                Console.WriteLine(" Your order is confirmed ");
+            }
+            else
+            {
+                Console.WriteLine(" No pending order found ");
+            }
+            Pause();
+        }
+
+        public void CancelOrder()
+        {
+            if (service.ChangeAllPending("canceled") == true)
+            {
+                Console.WriteLine(" Your order is canceled ");
+            }
+            else
+            {
+                Console.WriteLine(" No pending order found ");
+            }
+            Pause();
+        }
+
+        private void PrintOrders(List<OrderModel> orders)
+        {
+            Console.WriteLine("Dish\tQuantity\tTotal\tStatus");
+            for (int i = 0; i < orders.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + orders[i].GetDishName() + "\t" + orders[i].GetQuantity()
+                    + "\t" + orders[i].GetTotal() + "\t" + orders[i].GetStatus());
+            }
+            if (orders.Count == 0)
+            {
+                Console.WriteLine(" No orders found ");
+            }
+        }
+
+        private void Pause()
+        {
+            Console.WriteLine(" Press Enter to continue.....");
+            Console.ReadLine();
+        }
+        public void ViewPendingOrders()
+        {
+            Console.WriteLine(" ---------- Pending Orders ---------- ");
+            PrintOrders(service.GetOrdersByStatus("pending"));
+            Pause();
+        }
+
+        public void ChangeStatus(string newStatus)
+        {
+            Console.Write(" Enter order (dish) name : ");
+            string name = Console.ReadLine();
+
+            if (service.UpdateStatus(name, newStatus) == true)
+            {
+                Console.WriteLine(" Order status is now " + newStatus);
+            }
+            else
+            {
+                Console.WriteLine(" Order not found or already completed/canceled ");
+            }
+            Pause();
+        }
+
+        public void ShowRevenue()
+        {
+            Console.WriteLine(" ======== TOTAL REVENUE ======= ");
+            Console.WriteLine(" Total Revenue : Rs. " + service.GetTotalRevenue());
+            Console.WriteLine(" Total Orders  : " + service.GetAllOrders().Count);
+            Pause();
+        }
+    }
+}
+
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Properties\AssemblyInfo.cs =====
+
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+// General Information about an assembly is controlled through the following
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+[assembly: AssemblyTitle("RMS_project")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("RMS_project")]
+[assembly: AssemblyCopyright("Copyright ©  2026")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+
+// Setting ComVisible to false makes the types in this assembly not visible
+// to COM components.  If you need to access a type in this assembly from
+// COM, set the ComVisible attribute to true on that type.
+[assembly: ComVisible(false)]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("b39fdaca-b916-40b1-91f0-b513c4a8e326")]
+
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version
+//      Build Number
+//      Revision
+//
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+
+
+===== C:\OOP\OOP_PROJECT\RMS_project\RMS_project\Staff\StaffUI.cs =====
+
+using RMS_project.Order;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RMS_project.Staff
+{
+    internal class StaffUI
+    {
+       
+        private OrderUI orderUI = new OrderUI();
+
+        public void StaffMenu()
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("============ Staff Menu ============ ");
+                Console.WriteLine("1. View All Orders ");
+                Console.WriteLine("2. Process Order ");
+                Console.WriteLine("3. Mark Order As Completed ");
+                Console.WriteLine("4. View Pending Orders ");
+                Console.WriteLine("5. View Revenue Summary ");
+                Console.WriteLine("6. Exit ");
+                Console.Write(" Choose : ");
+                string option = Console.ReadLine();
+
+                if (option == "1") { orderUI.OrderHistory(); }
+                else if (option == "2") { orderUI.ChangeStatus("processing"); }
+                else if (option == "3") { orderUI.ChangeStatus("completed"); }
+                else if (option == "4") { orderUI.ViewPendingOrders(); }
+                else if (option == "5") { orderUI.ShowRevenue(); }
+                else if (option == "6") { break; }
+                else
+                {
+                    Console.WriteLine(" invalid option ");
+                    Console.ReadLine();
+                }
+            }
+        }
+    }
+}
+
+

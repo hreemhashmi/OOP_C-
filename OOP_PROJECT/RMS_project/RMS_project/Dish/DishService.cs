@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,6 +46,7 @@ namespace RMS_project.Dish
                     dishes[i].SetPrice(newPrice);
                     repo.SaveAllInFile(dishes);
                     return true;
+
                 }
             }
             return false;
@@ -102,6 +104,51 @@ namespace RMS_project.Dish
                 }
             }
             repo.SaveAllInFile(dishes);
+        }
+       
+        //Q2
+
+        // Lab Evaluation
+
+        public DishModel MatchedDishes(string name)
+        {
+            List<DishModel> dish = repo.GetDishesFromFiles();
+            for(int i = 0; i < dish.Count; i++)
+            {
+                if (dish[i].GetName() == name)
+                {
+                    return dish[i];
+                }
+            }
+            return null;
+        }
+        public  List<DishModel> aboveNumeric(float value)
+          
+        {
+            List<DishModel> dish = repo.GetDishesFromFiles();
+            List<DishModel> result = new List<DishModel>();
+            for(int i = 0; i < dish.Count; i++)
+            {
+                if (dish[i].GetPrice() > value)
+                {
+                    result.Add(dish[i]);
+                }
+            }
+            return result;
+        }
+        public List<DishModel> belowNumeric(float value)
+
+        {
+            List<DishModel> dish = repo.GetDishesFromFiles();
+            List<DishModel> result = new List<DishModel>();
+            for (int i = 0; i < dish.Count; i++)
+            {
+                if (dish[i].GetPrice() < value)
+                {
+                    result.Add(dish[i]);
+                }
+            }
+            return result;
         }
     }
 }

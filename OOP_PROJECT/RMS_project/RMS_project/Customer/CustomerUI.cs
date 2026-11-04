@@ -30,6 +30,7 @@ namespace RMS_project.Customer
                 Console.WriteLine("9.  Confirm Order ");
                 Console.WriteLine("10. Cancel Order ");
                 Console.WriteLine("11. View Order History ");
+              
                 Console.WriteLine("12. Exit ");
                 Console.Write(" Choose : ");
                 string option = Console.ReadLine();
@@ -67,6 +68,8 @@ namespace RMS_project.Customer
                 else if (option == "11")
                 { orderUI.OrderHistory();
                 }
+                //filters
+                
                 else if (option == "12") 
                 { break;
                 }

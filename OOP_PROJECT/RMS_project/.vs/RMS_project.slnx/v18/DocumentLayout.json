@@ -3,83 +3,83 @@
   "WorkspaceRootPath": "C:\\OOP\\OOP_PROJECT\\RMS_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\staff\\staffui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\staff\\staffui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\order\\orderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\order\\orderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\order\\orderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\order\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\order\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\order\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\order\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\order\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\order\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\order\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\employee\\employeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\employee\\employeerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\employee\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\dish\\dishui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\dish\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\dish\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\dish\\dishrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\dish\\dishui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\dish\\dishmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\admin\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\admin\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\customer\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\customer\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\admin\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\admin\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\admin\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\admin\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\order\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\order\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\order\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\order\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\staff\\staffui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\staff\\staffui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\employee\\employeerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\dish\\dishrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\dish\\dishmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\dish\\dishmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\employee\\employeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\employee\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\employee\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\admin\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\admin\\adminrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|c:\\oop\\oop_project\\rms_project\\rms_project\\admin\\adminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|C:\\OOP\\OOP_PROJECT\\RMS_project\\rms_project\\admin\\adminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B39FDACA-B916-40B1-91F0-B513C4A8E326}|RMS_project\\RMS_project.csproj|solutionrelative:rms_project\\admin\\adminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,115 +90,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EmployeeUI.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeUI.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Employee\\EmployeeUI.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeUI.cs",
-              "RelativeToolTip": "RMS_project\\Employee\\EmployeeUI.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DishService.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishService.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Dish\\DishService.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishService.cs",
+              "RelativeToolTip": "RMS_project\\Dish\\DishService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T12:08:58.616Z",
+              "WhenOpened": "2026-11-01T07:03:24.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderModel.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderModel.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Order\\OrderModel.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderModel.cs",
-              "RelativeToolTip": "RMS_project\\Order\\OrderModel.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAIwEoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DishUI.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishUI.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Dish\\DishUI.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishUI.cs",
+              "RelativeToolTip": "RMS_project\\Dish\\DishUI.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T11:09:02.563Z",
+              "WhenOpened": "2026-11-01T07:03:43.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderRepo.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderRepo.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Order\\OrderRepo.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderRepo.cs",
-              "RelativeToolTip": "RMS_project\\Order\\OrderRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T11:09:28.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderService.cs",
               "RelativeDocumentMoniker": "RMS_project\\Order\\OrderService.cs",
               "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderService.cs",
               "RelativeToolTip": "RMS_project\\Order\\OrderService.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAAAI8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAALoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-01T11:10:10.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "CustomerUI.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Customer\\CustomerUI.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Customer\\CustomerUI.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Customer\\CustomerUI.cs",
+              "RelativeToolTip": "RMS_project\\Customer\\CustomerUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:27:53.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OrderUI.cs",
               "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderUI.cs",
               "RelativeDocumentMoniker": "RMS_project\\Order\\OrderUI.cs",
               "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderUI.cs",
               "RelativeToolTip": "RMS_project\\Order\\OrderUI.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAQwLgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAALgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-01T11:10:33.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StaffUI.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Staff\\StaffUI.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Staff\\StaffUI.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Staff\\StaffUI.cs",
-              "RelativeToolTip": "RMS_project\\Staff\\StaffUI.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AdminUI.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminUI.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Admin\\AdminUI.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminUI.cs",
+              "RelativeToolTip": "RMS_project\\Admin\\AdminUI.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T11:54:44.759Z",
+              "WhenOpened": "2026-10-31T13:21:39.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Program.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Program.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Program.cs",
-              "RelativeToolTip": "RMS_project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminService.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Admin\\AdminService.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminService.cs",
+              "RelativeToolTip": "RMS_project\\Admin\\AdminService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:18:20.736Z",
+              "WhenOpened": "2026-10-31T13:20:56.285Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Restaurant.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Restaurant.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Restaurant.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Restaurant.cs",
-              "RelativeToolTip": "RMS_project\\Restaurant.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderModel.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Order\\OrderModel.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderModel.cs",
+              "RelativeToolTip": "RMS_project\\Order\\OrderModel.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:22:52.199Z",
+              "WhenOpened": "2026-11-01T11:09:02.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "OrderRepo.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderRepo.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Order\\OrderRepo.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Order\\OrderRepo.cs",
+              "RelativeToolTip": "RMS_project\\Order\\OrderRepo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:09:28.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffUI.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Staff\\StaffUI.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Staff\\StaffUI.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Staff\\StaffUI.cs",
+              "RelativeToolTip": "RMS_project\\Staff\\StaffUI.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:54:44.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeService.cs",
               "RelativeDocumentMoniker": "RMS_project\\Employee\\EmployeeService.cs",
@@ -206,64 +230,23 @@
               "RelativeToolTip": "RMS_project\\Employee\\EmployeeService.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T12:08:35.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T12:08:35.856Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "EmployeeRepo.cs",
               "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeRepo.cs",
               "RelativeDocumentMoniker": "RMS_project\\Employee\\EmployeeRepo.cs",
               "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeRepo.cs",
               "RelativeToolTip": "RMS_project\\Employee\\EmployeeRepo.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T12:08:11.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EmployeeModel.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeModel.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Employee\\EmployeeModel.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeModel.cs",
-              "RelativeToolTip": "RMS_project\\Employee\\EmployeeModel.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T12:07:49.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DishUI.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishUI.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Dish\\DishUI.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishUI.cs",
-              "RelativeToolTip": "RMS_project\\Dish\\DishUI.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAF0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T07:03:43.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T12:08:11.465Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DishService.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishService.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Dish\\DishService.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishService.cs",
-              "RelativeToolTip": "RMS_project\\Dish\\DishService.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAAE8AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T07:03:24.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "DishRepo.cs",
               "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishRepo.cs",
               "RelativeDocumentMoniker": "RMS_project\\Dish\\DishRepo.cs",
@@ -271,60 +254,67 @@
               "RelativeToolTip": "RMS_project\\Dish\\DishRepo.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T07:03:00.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T07:03:00.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "DishModel.cs",
               "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishModel.cs",
               "RelativeDocumentMoniker": "RMS_project\\Dish\\DishModel.cs",
               "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Dish\\DishModel.cs",
               "RelativeToolTip": "RMS_project\\Dish\\DishModel.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T07:02:40.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T07:02:40.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Restaurant.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Restaurant.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Restaurant.cs",
+              "RelativeToolTip": "RMS_project\\Restaurant.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:22:52.199Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminService.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Admin\\AdminService.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminService.cs",
-              "RelativeToolTip": "RMS_project\\Admin\\AdminService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Program.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Program.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Program.cs",
+              "RelativeToolTip": "RMS_project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:20:56.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T13:18:20.736Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "CustomerUI.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Customer\\CustomerUI.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Customer\\CustomerUI.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Customer\\CustomerUI.cs",
-              "RelativeToolTip": "RMS_project\\Customer\\CustomerUI.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
+              "Title": "EmployeeUI.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeUI.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Employee\\EmployeeUI.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeUI.cs",
+              "RelativeToolTip": "RMS_project\\Employee\\EmployeeUI.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T11:27:53.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T12:08:58.616Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "AdminUI.cs",
-              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminUI.cs",
-              "RelativeDocumentMoniker": "RMS_project\\Admin\\AdminUI.cs",
-              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Admin\\AdminUI.cs",
-              "RelativeToolTip": "RMS_project\\Admin\\AdminUI.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAHEAAAAuAAAAAAAAAA==",
+              "Title": "EmployeeModel.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeModel.cs",
+              "RelativeDocumentMoniker": "RMS_project\\Employee\\EmployeeModel.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\RMS_project\\RMS_project\\Employee\\EmployeeModel.cs",
+              "RelativeToolTip": "RMS_project\\Employee\\EmployeeModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:21:39.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T12:07:49.949Z"
             },
             {
               "$type": "Document",
@@ -336,8 +326,7 @@
               "RelativeToolTip": "RMS_project\\Admin\\AdminRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:20:30.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T13:20:30.347Z"
             },
             {
               "$type": "Document",
@@ -349,8 +338,7 @@
               "RelativeToolTip": "RMS_project\\Admin\\AdminModel.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:20:07.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T13:20:07.958Z"
             }
           ]
         }

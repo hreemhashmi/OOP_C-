@@ -61,8 +61,11 @@ namespace RMS_project.Admin
                 Console.WriteLine("8.  View Total Revenue ");
                 Console.WriteLine("9.  View Order History ");
                 Console.WriteLine("10. Staff Management ");
+                // lab evaluation
+                Console.WriteLine("11. Show all ");
+
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("11. Exit ");
+                Console.WriteLine("12. Exit ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine(" Choose Option ");
                 string option = Console.ReadLine();
@@ -70,14 +73,14 @@ namespace RMS_project.Admin
                 {
                     // add dishes
                     dishUI.AddDish();
-                
+
                 }
                 else if (option == "2")
                 {
                     // view all dishes
                     dishUI.ViewDishes();
 
-                    
+
                 }
                 else if (option == "3")
                 {
@@ -88,33 +91,39 @@ namespace RMS_project.Admin
                 {
                     dishUI.UpdateDish();
                 }
-                else if(option == "5")
+                else if (option == "5")
                 {
                     dishUI.DeleteDish();
                 }
-                else if( option == "6")
+                else if (option == "6")
                 {
                     dishUI.SortDishes(true);
                 }
-                else if(option == "7")
+                else if (option == "7")
                 {
                     dishUI.SortDishes(false);
 
                 }
-                else if(option == "8")
+                else if (option == "8")
                 {
                     orderUI.ShowRevenue();
                 }
-                else if(option == "9")
+                else if (option == "9")
                 {
                     orderUI.OrderHistory();
                 }
-                else if(option == "10")
+                else if (option == "10")
                 {
                     employeeUI.EmployeeMenu();
 
                 }
-                else if(option == "11")
+                
+                // lab evaluation
+                else if (option == "11")
+                {
+                    dishUI.showAll();
+                }
+                else if (option == "12")
                 {
                     break;
                 }
@@ -127,5 +136,6 @@ namespace RMS_project.Admin
                 }
             }
         }
+      
     }
 }
