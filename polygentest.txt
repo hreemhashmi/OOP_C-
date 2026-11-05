@@ -1,9 +1,0 @@
-#include<iostream>
-using namespace std;
-main(){
-cout<<"    enter the sides of polygen (n):";
-int n;
-cin>>n;
-//n>=3;
-int sum_of_angels = (n-2)*180;
-cout<<"sum of angels"<<sum_of_angels<< "degrees";}

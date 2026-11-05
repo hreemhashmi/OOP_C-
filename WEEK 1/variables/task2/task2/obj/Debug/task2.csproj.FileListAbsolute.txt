@@ -1,0 +1,7 @@
+C:\OOP\WEEK 1\variables\task2\task2\bin\Debug\task2.exe.config
+C:\OOP\WEEK 1\variables\task2\task2\bin\Debug\task2.exe
+C:\OOP\WEEK 1\variables\task2\task2\bin\Debug\task2.pdb
+C:\OOP\WEEK 1\variables\task2\task2\obj\Debug\task2.csproj.AssemblyReference.cache
+C:\OOP\WEEK 1\variables\task2\task2\obj\Debug\task2.csproj.CoreCompileInputs.cache
+C:\OOP\WEEK 1\variables\task2\task2\obj\Debug\task2.exe
+C:\OOP\WEEK 1\variables\task2\task2\obj\Debug\task2.pdb

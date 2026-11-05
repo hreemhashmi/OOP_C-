@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\OOP\\sampleproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\OOP\\OOP_PROJECT\\pactice_project\\pactice_project\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|c:\\oop\\sampleproject\\sampleproject\\product\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|solutionrelative:sampleproject\\product\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|C:\\OOP\\sampleproject\\sampleproject\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|solutionrelative:sampleproject\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|C:\\OOP\\sampleproject\\sampleproject\\product\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|solutionrelative:sampleproject\\product\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|C:\\OOP\\sampleproject\\sampleproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|solutionrelative:sampleproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|C:\\OOP\\sampleproject\\sampleproject\\product\\productui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|solutionrelative:sampleproject\\product\\productui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|C:\\OOP\\sampleproject\\sampleproject\\product\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73316D9-4EDE-4331-BD77-3993961CFA8B}|sampleproject\\sampleproject.csproj|solutionrelative:sampleproject\\product\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\OOP\\OOP_PROJECT\\pactice_project\\pactice_project\\Program.cs",
+              "RelativeDocumentMoniker": "..\\OOP_PROJECT\\pactice_project\\pactice_project\\Program.cs",
+              "ToolTip": "C:\\OOP\\OOP_PROJECT\\pactice_project\\pactice_project\\Program.cs",
+              "RelativeToolTip": "..\\OOP_PROJECT\\pactice_project\\pactice_project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T04:19:18.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductUI.cs",
+              "DocumentMoniker": "C:\\OOP\\sampleproject\\sampleproject\\product\\ProductUI.cs",
+              "RelativeDocumentMoniker": "sampleproject\\product\\ProductUI.cs",
+              "ToolTip": "C:\\OOP\\sampleproject\\sampleproject\\product\\ProductUI.cs",
+              "RelativeToolTip": "sampleproject\\product\\ProductUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T07:45:26.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "productService.cs",
+              "DocumentMoniker": "C:\\OOP\\sampleproject\\sampleproject\\product\\productService.cs",
+              "RelativeDocumentMoniker": "sampleproject\\product\\productService.cs",
+              "ToolTip": "C:\\OOP\\sampleproject\\sampleproject\\product\\productService.cs",
+              "RelativeToolTip": "sampleproject\\product\\productService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T07:44:53.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "productrepo.cs",
+              "DocumentMoniker": "C:\\OOP\\sampleproject\\sampleproject\\product\\productrepo.cs",
+              "RelativeDocumentMoniker": "sampleproject\\product\\productrepo.cs",
+              "ToolTip": "C:\\OOP\\sampleproject\\sampleproject\\product\\productrepo.cs",
+              "RelativeToolTip": "sampleproject\\product\\productrepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T07:44:25.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "productmodel.cs",
+              "DocumentMoniker": "C:\\OOP\\sampleproject\\sampleproject\\product\\productmodel.cs",
+              "RelativeDocumentMoniker": "sampleproject\\product\\productmodel.cs",
+              "ToolTip": "C:\\OOP\\sampleproject\\sampleproject\\product\\productmodel.cs",
+              "RelativeToolTip": "sampleproject\\product\\productmodel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T07:14:53.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "shop.cs",
+              "DocumentMoniker": "C:\\OOP\\sampleproject\\sampleproject\\shop.cs",
+              "RelativeDocumentMoniker": "sampleproject\\shop.cs",
+              "ToolTip": "C:\\OOP\\sampleproject\\sampleproject\\shop.cs",
+              "RelativeToolTip": "sampleproject\\shop.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T05:53:42.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\OOP\\sampleproject\\sampleproject\\Program.cs",
+              "RelativeDocumentMoniker": "sampleproject\\Program.cs",
+              "ToolTip": "C:\\OOP\\sampleproject\\sampleproject\\Program.cs",
+              "RelativeToolTip": "sampleproject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T05:12:12.685Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
